@@ -65,7 +65,8 @@ var legend = L.control({ position: "bottomright" });
 legend.onAdd = function (myMap) {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML += "<h4>Depth Color Legend</h4>";
-    div.innerHTML += '<i style="background: pink"></i><span>(Depth < 10)</span><br>';
+   
+    div.innerHTML += '<i style="background: pink"></i>(Depth < 10)<br>';
     div.innerHTML += '<i style="background: green"></i><span>(10 < Depth <= 25)</span><br>';
     div.innerHTML += '<i style="background: yellow"></i><span>(25 < Depth <= 40)</span><br>';
     div.innerHTML += '<i style="background: purple"></i><span>(40 < Depth <= 55)</span><br>';
